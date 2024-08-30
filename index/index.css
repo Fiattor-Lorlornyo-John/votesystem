@@ -1,0 +1,83 @@
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.site-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+nav .logo h1 {
+    margin: 0;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftside img {
+    max-width: 100%;
+    height: auto;
+}
+
+.rightside {
+    text-align: center;
+}
+
+.rightside h1 {
+    font-size: 2em;
+}
+
+.rightside p {
+    font-size: 1.2em;
+}
+
+.rightside button {
+    padding: 10px 20px;
+    font-size: 1em;
+    margin: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .site-header {
+        padding: 10px;
+    }
+
+    .rightside h1 {
+        font-size: 1.5em;
+    }
+
+    .rightside p {
+        font-size: 1em;
+    }
+
+    .rightside button {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .rightside h1 {
+        font-size: 1.2em;
+    }
+
+    .rightside p {
+        font-size: 0.9em;
+    }
+
+    .rightside button {
+        padding: 6px 12px;
+        font-size: 0.8em;
+    }
+}
